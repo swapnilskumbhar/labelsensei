@@ -268,7 +268,7 @@ export default function Home() {
           </div>
           
           <div className="mt-12 text-xs text-slate-600">
-            &copy; {new Date().getFullYear()} LabelSensei AI. All rights reserved.
+            &copy; {new Date().getFullYear()} LabelSensei. A product of Health Upstream. All rights reserved.
           </div>
         </div>
       </footer>
