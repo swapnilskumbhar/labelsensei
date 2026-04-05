@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "LabelSensei AI - The Verdict on your Health",
+  title: "LabelSensei AI - See Beyond the Label",
   description: "An AI-powered Intelligent Health Inspector. Send a photo of any grocery or personal care ingredients to LabelSensei on WhatsApp.",
 };
 

@@ -38,34 +38,34 @@ export default function Home() {
           <a href="#features" className="hover:text-primary transition-colors">Features</a>
         </div>
       </nav>
-      
+
       {/* 1. Hero Section */}
       <section id="hero" className="relative px-6 py-20 text-center flex flex-col items-center justify-center min-h-[90vh] pt-32">
         {/* Subtle background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] max-w-[800px] bg-primary/20 rounded-full blur-[100px] pointer-events-none" />
-        
+
         <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="relative z-10 max-w-4xl mx-auto">
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700/50 backdrop-blur-md mb-8 text-sm text-slate-300 font-medium">
             <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse"></span>
             LabelSensei AI
           </motion.div>
-          
+
           <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-white text-balance leading-tight">
-            Protecting your Health, <br/> <span className="text-primary italic">One scan</span> at a time.
+            Protecting your Health, <br /> <span className="text-primary italic">One scan</span> at a time.
           </motion.h1>
 
           <motion.h2 variants={fadeInUp} className="text-2xl md:text-3xl font-semibold text-slate-200 mb-4 tracking-wide">
             Ask the Sensei. Know what's inside.
           </motion.h2>
-          
+
           <motion.p variants={fadeInUp} className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Send a photo of any grocery, personal care ingredient, or prepared meal to LabelSensei on WhatsApp. Get a blunt health verdict in seconds.
+            With LabelSensei, you don't have to guess what's inside your food or personal care products or Prepared meals. Simply send a photo, and get a clear, honest breakdown of ingredients—so you know exactly about the product.
           </motion.p>
-          
+
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://wa.me/919325835971" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-primary hover:bg-teal-600 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95 text-lg w-full sm:w-auto justify-center">
               <MessageCircle className="w-6 h-6" />
-              Start Your First Inspection
+              👉 Start your first inspection now
             </a>
           </motion.div>
         </motion.div>
@@ -78,15 +78,15 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Zero Friction. Instant Truth.</h2>
             <p className="text-slate-400 text-lg">Know the risks. Choose better.</p>
           </div>
-          
-          <motion.div 
+
+          <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
             className="grid md:grid-cols-3 gap-8"
           >
             {[
-              { title: "1. Snap", desc: "Take a clear photo of any product label or ingredients list.", icon: <Smartphone className="w-8 h-8 text-primary" /> },
-              { title: "2. Send", desc: "Message the image to the LabelSensei WhatsApp bot.", icon: <ArrowRight className="w-8 h-8 text-primary" /> },
-              { title: "3. See", desc: "Receive an instant Rating (1-10) and a Sensei's Verdict.", icon: <Eye className="w-8 h-8 text-accent-green" /> }
+              { title: "1. Snap", desc: "Take a clear photo of any product label", icon: <Smartphone className="w-8 h-8 text-primary" /> },
+              { title: "2. Send", desc: "Message the image to the LabelSensei WhatsApp bot", icon: <ArrowRight className="w-8 h-8 text-primary" /> },
+              { title: "3. See", desc: "Receive a simple, easy-to-understand product analysis", icon: <Eye className="w-8 h-8 text-accent-green" /> }
             ].map((step, i) => (
               <motion.div key={i} variants={fadeInUp} className="bg-slate-800/40 border border-slate-700/50 hidden:opacity-0 p-8 rounded-2xl hover:bg-slate-800/60 transition-colors">
                 <div className="w-16 h-16 rounded-2xl bg-slate-900/80 flex items-center justify-center mb-6 shadow-inner border border-slate-700/50">
@@ -105,21 +105,21 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-[150px] pointer-events-none"></div>
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeInUp}>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Blunt Honesty.<br/>Instantly delivered.</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">No jargon. No confusion.<br />Just clarity.</h2>
             <p className="text-slate-400 text-lg md:text-xl mb-8 leading-relaxed">
-              No marketing fluff. Just the chemical facts. We break down complex ingredient lists into an easy-to-understand verdict.
+              From hidden additives to harmful chemicals, LabelSensei analyzes product labels and delivers a straightforward health verdict within seconds.
             </p>
             <div className="flex gap-4 items-center">
               <div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center border border-red-500/30">
                 <span className="text-accent-red font-bold">1-3</span>
               </div>
               <span className="text-slate-300">Alert</span>
-              
+
               <div className="w-12 h-12 rounded-full bg-gray-500/20 flex items-center justify-center border border-gray-500/30 ml-4">
                 <span className="text-gray-400 font-bold">4-7</span>
               </div>
               <span className="text-slate-300">Caution</span>
-              
+
               <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center border border-green-500/30 ml-4">
                 <span className="text-accent-green font-bold">8-10</span>
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
           </motion.div>
 
           {/* WhatsApp Bubble Mockup */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -184,7 +184,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <motion.div 
+          <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
           >
@@ -200,19 +200,19 @@ export default function Home() {
             ].map((item, i) => {
               const Icon = item.icon;
               return (
-              <motion.div key={i} variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }} transition={{ duration: 0.3 }}
-                className="bg-slate-800/30 hover:bg-slate-800/60 border border-slate-700/50 hover:border-primary/30 transition-all rounded-xl p-5 group flex flex-col gap-3"
-              >
-                <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-700/50 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors shrink-0">
-                  <Icon className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2 leading-tight">{item.title}</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              </motion.div>
-            );
-          })}
+                <motion.div key={i} variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }} transition={{ duration: 0.3 }}
+                  className="bg-slate-800/30 hover:bg-slate-800/60 border border-slate-700/50 hover:border-primary/30 transition-all rounded-xl p-5 group flex flex-col gap-3"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-700/50 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors shrink-0">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-2 leading-tight">{item.title}</h4>
+                    <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </section>
@@ -221,10 +221,10 @@ export default function Home() {
       <section id="features" className="py-24 px-6 bg-background scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Why LabelSensei?</h2>
-            <p className="text-slate-400 text-lg">Your pocket health expert.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Why it matters:</h2>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto">Because every ingredient impacts your health—and you deserve to know the truth before you use it.</p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "Blunt Honesty", desc: "No marketing fluff. Just the chemical facts.", icon: <Zap className="w-6 h-6 text-primary" /> },
@@ -249,7 +249,7 @@ export default function Home() {
       {/* Footer / Section 7 */}
       <footer className="border-t border-slate-800 bg-slate-950 px-6 py-12 relative overflow-hidden">
         <div className="max-w-6xl mx-auto relative z-10 flex flex-col items-center text-center">
-          
+
           <div className="inline-flex items-start md:items-center gap-3 mb-8 p-4 rounded-xl bg-slate-800/40 border border-slate-700/50">
             <ShieldCheck className="w-5 h-5 text-slate-400 shrink-0 mt-0.5 md:mt-0" />
             <p className="text-slate-400 text-sm max-w-2xl text-left md:text-center">
@@ -266,7 +266,7 @@ export default function Home() {
             <button onClick={() => setActiveModal("privacy")} className="hover:text-primary transition-colors">Privacy Policy</button>
             <button onClick={() => setActiveModal("terms")} className="hover:text-primary transition-colors">Terms of Service</button>
           </div>
-          
+
           <div className="mt-12 text-xs text-slate-600">
             &copy; {new Date().getFullYear()} LabelSensei. A product of Health Upstream. All rights reserved.
           </div>
@@ -276,17 +276,17 @@ export default function Home() {
       {/* Legal Modals */}
       {activeModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" onClick={() => setActiveModal(null)}>
-          <div 
-            className="bg-slate-900 border border-slate-700/50 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl" 
+          <div
+            className="bg-slate-900 border border-slate-700/50 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl"
             onClick={e => e.stopPropagation()}
           >
-            <button 
-              className="absolute top-4 right-4 md:top-6 md:right-6 p-2 text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-800 rounded-full transition-colors" 
+            <button
+              className="absolute top-4 right-4 md:top-6 md:right-6 p-2 text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-800 rounded-full transition-colors"
               onClick={() => setActiveModal(null)}
             >
-              <X className="w-5 h-5"/>
+              <X className="w-5 h-5" />
             </button>
-            
+
             {activeModal === "privacy" ? (
               <div className="text-slate-300 space-y-4 text-sm md:text-base leading-relaxed">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Privacy Policy</h2>
