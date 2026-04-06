@@ -109,21 +109,27 @@ export default function Home() {
             <p className="text-slate-400 text-lg md:text-xl mb-8 leading-relaxed">
               From hidden additives to harmful chemicals, LabelSensei analyzes product labels and delivers a straightforward health verdict within seconds.
             </p>
-            <div className="flex gap-4 items-center">
-              <div className="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center border border-red-500/30">
-                <span className="text-accent-red font-bold">1-3</span>
+            <div className="flex flex-wrap gap-x-6 gap-y-4 items-center">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-red-500/20 flex items-center justify-center border border-red-500/30 shrink-0">
+                  <span className="text-accent-red font-bold text-sm sm:text-base">1-3</span>
+                </div>
+                <span className="text-slate-300">Alert</span>
               </div>
-              <span className="text-slate-300">Alert</span>
 
-              <div className="w-12 h-12 rounded-full bg-gray-500/20 flex items-center justify-center border border-gray-500/30 ml-4">
-                <span className="text-gray-400 font-bold">4-7</span>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-500/20 flex items-center justify-center border border-gray-500/30 shrink-0">
+                  <span className="text-gray-400 font-bold text-sm sm:text-base">4-7</span>
+                </div>
+                <span className="text-slate-300">Caution</span>
               </div>
-              <span className="text-slate-300">Caution</span>
 
-              <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center border border-green-500/30 ml-4">
-                <span className="text-accent-green font-bold">8-10</span>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-green-500/20 flex items-center justify-center border border-green-500/30 shrink-0">
+                  <span className="text-accent-green font-bold text-sm sm:text-base">8-10</span>
+                </div>
+                <span className="text-slate-300">Safe</span>
               </div>
-              <span className="text-slate-300">Safe</span>
             </div>
           </motion.div>
 
@@ -141,7 +147,7 @@ export default function Home() {
                 <MessageCircle className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="text-white font-semibold">LabelSensei</h4>
+                <div className="text-white font-semibold">LabelSensei</div>
                 <p className="text-xs text-slate-400">bot • Online</p>
               </div>
             </div>
@@ -207,7 +213,7 @@ export default function Home() {
                     <Icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-2 leading-tight">{item.title}</h4>
+                    <h3 className="text-white font-semibold mb-2 leading-tight">{item.title}</h3>
                     <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </motion.div>
@@ -237,7 +243,7 @@ export default function Home() {
                   {f.icon}
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-white mb-2">{f.title}</h4>
+                  <h3 className="text-xl font-bold text-white mb-2">{f.title}</h3>
                   <p className="text-slate-400">{f.desc}</p>
                 </div>
               </div>
