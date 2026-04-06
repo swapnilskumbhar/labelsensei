@@ -192,7 +192,7 @@ export default function Home() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
               { title: 'Identifying Hidden Sugars & Synthetic Additives', desc: 'Spotting sweeteners and artificial dyes disguised under technical or "healthy" names.', icon: Search },
@@ -207,13 +207,13 @@ export default function Home() {
               const Icon = item.icon;
               return (
                 <motion.div key={i} variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }} transition={{ duration: 0.3 }}
-                  className="bg-slate-800/30 hover:bg-slate-800/60 border border-slate-700/50 hover:border-primary/30 transition-all rounded-xl p-5 group flex flex-col gap-3"
+                  className="bg-slate-800/30 hover:bg-slate-800/50 border border-slate-700/40 hover:border-primary/30 transition-all rounded-2xl p-6 group flex flex-col gap-4"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-slate-900 border border-slate-700/50 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors shrink-0">
-                    <Icon className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700/50 flex items-center justify-center shrink-0 group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors">
+                    <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold mb-2 leading-tight">{item.title}</h3>
+                    <h3 className="text-lg font-bold text-white mb-2 leading-tight">{item.title}</h3>
                     <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </motion.div>
@@ -231,23 +231,25 @@ export default function Home() {
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">Because every ingredient impacts your health—and you deserve to know the truth before you use it.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Blunt Honesty", desc: "No marketing fluff. Just the chemical facts.", icon: <Zap className="w-6 h-6 text-primary" /> },
-              { title: "Universal Assessment", desc: "One AI to decode food, personal care, baby products, household cleaners, and pet supplies.", icon: <ShieldCheck className="w-6 h-6 text-primary" /> },
-              { title: "Zero Friction", desc: "No app to download. No account to create. Just WhatsApp.", icon: <Smartphone className="w-6 h-6 text-primary" /> },
-              { title: "Visual Intelligence", desc: "Reads the fine print so you don't have to.", icon: <Eye className="w-6 h-6 text-primary" /> }
-            ].map((f, i) => (
-              <div key={i} className="p-8 rounded-3xl bg-slate-800/30 border border-slate-700/40 hover:bg-slate-800/50 transition-all flex gap-6 items-start">
-                <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-700/50 shrink-0 shadow-inner">
-                  {f.icon}
+              { title: "Blunt Honesty", desc: "No marketing fluff. Just the chemical facts.", icon: Zap },
+              { title: "Universal Assessment", desc: "One AI to decode food, personal care, baby products, household cleaners, and pet supplies.", icon: ShieldCheck },
+              { title: "Zero Friction", desc: "No app to download. No account to create. Just WhatsApp.", icon: Smartphone },
+              { title: "Visual Intelligence", desc: "Reads the fine print so you don't have to.", icon: Eye }
+            ].map((item, i) => {
+              const Icon = item.icon;
+              return (
+              <div key={i} className="bg-slate-800/30 hover:bg-slate-800/50 border border-slate-700/40 hover:border-primary/30 transition-all rounded-2xl p-6 group flex flex-col gap-4">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700/50 flex items-center justify-center shrink-0 group-hover:bg-primary/20 group-hover:border-primary/50 transition-colors">
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">{f.title}</h3>
-                  <p className="text-slate-400">{f.desc}</p>
+                  <h3 className="text-lg font-bold text-white mb-2 leading-tight">{item.title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </section>

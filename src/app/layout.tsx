@@ -13,44 +13,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "LabelSensei AI | Decode Any Ingredient List Instantly via WhatsApp",
-  description: "Stop guessing what's in your food, personal care, or baby products. Send a photo of any ingredient list to LabelSensei AI on WhatsApp and get instant, honest health awareness and risk ratings.",
+  title: "LabelSensei AI - See Beyond the Label",
+  description: "An AI-powered Intelligent Health Inspector. Send a photo of any grocery or personal care ingredients to LabelSensei on WhatsApp.",
   keywords: [
     "AI ingredient analyzer", 
     "food label scanner", 
-    "decode ingredient list", 
     "WhatsApp health bot", 
+    "decode ingredient list", 
+    "personal care product safety",
     "hidden sugars detector", 
     "ultra-processed food scanner", 
-    "toxin scanner app",
-    "personal care product safety",
-    "dietary restriction checker",
     "clean label AI"
   ],
-  authors: [{ name: "Health Upstream" }],
-  creator: "Health Upstream",
+  authors: [{ name: "LabelSensei" }],
   openGraph: {
-    title: "LabelSensei AI | See Beyond the Label",
-    description: "Send a photo of any grocery or personal care ingredients to LabelSensei on WhatsApp. Decode hidden additives, toxic chemicals, and health risks instantly.",
+    title: "LabelSensei AI - See Beyond the Label",
+    description: "An AI-powered Intelligent Health Inspector. Send a photo of any grocery or personal care ingredients to LabelSensei on WhatsApp.",
     siteName: "LabelSensei AI",
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "LabelSensei AI | Stop Guessing What's In Your Products",
-    description: "Snap a photo of the ingredient list. Get an instant, honest health analysis right in WhatsApp.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   icons: {
     icon: "/whatsapp-bot.svg",
