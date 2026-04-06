@@ -55,11 +55,11 @@ export default function Home() {
           </motion.h1>
 
           <motion.h2 variants={fadeInUp} className="text-2xl md:text-3xl font-semibold text-slate-200 mb-4 tracking-wide">
-            Ask the Sensei. Know what's inside.
+            Ask the Sensei. Know what&apos;s inside.
           </motion.h2>
 
           <motion.p variants={fadeInUp} className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            With LabelSensei, you don't have to guess what's inside your food or personal care products or Prepared meals. Simply send a photo, and get a clear, honest breakdown of ingredients—so you know exactly about the product.
+            With LabelSensei, you don&apos;t have to guess what&apos;s inside your food or personal care products or Prepared meals. Simply send a photo, and get a clear, honest breakdown of ingredients—so you know exactly about the product.
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -158,6 +158,7 @@ export default function Home() {
               <div className="flex justify-end">
                 <div className="bg-[#005c4b] rounded-l-2xl rounded-br-2xl p-1 shadow-sm relative">
                   <div className="w-64 sm:w-72 h-80 sm:h-96 rounded-[12px] overflow-hidden border border-[#005c4b] relative">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="/potato_chips.jpeg" alt="Potato Chips Ingredient List" className="w-full h-full object-cover" />
                   </div>
                 </div>
@@ -185,7 +186,7 @@ export default function Home() {
             <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">LabelSensei Intelligence Engine</h2>
               <p className="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-                We don't trust marketing claims. We decode the chemical reality. Our intelligence engine exposes precisely what corporations try to hide in the fine print across all your daily products.
+                We don&apos;t trust marketing claims. We decode the chemical reality. Our intelligence engine exposes precisely what corporations try to hide in the fine print across all your daily products.
               </p>
             </motion.div>
           </div>
